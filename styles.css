@@ -452,10 +452,10 @@ body {
 
 .nav-btn {
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.25rem;
     border-radius: 15px;
     font-weight: bold;
-    font-size: 0.55rem;
+    font-size: 0.85rem;
     transition: all 0.3s ease;
     border: 1.5px solid transparent;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -764,6 +764,28 @@ body {
 
     .station-content {
         grid-template-columns: 1fr;
+    }
+    
+    /* 导航按钮响应式样式 */
+    .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+        margin-top: 1rem;
+    }
+    
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .nav-btn.primary,
+    .nav-btn.secondary,
+    .nav-btn.disabled {
+        display: block;
+        width: 100%;
     }
 
     .summary-table {
@@ -1717,5 +1739,28 @@ body {
     .image-placeholder {
         height: 150px;
         font-size: 0.85rem;
+    }
+    
+    /* 导航按钮响应式样式 */
+    .nav-buttons,
+    .conclusion-actions {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+        margin-top: 1rem;
+    }
+    
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .nav-btn.primary,
+    .nav-btn.secondary,
+    .nav-btn.disabled {
+        display: block;
+        width: 100%;
     }
 }
